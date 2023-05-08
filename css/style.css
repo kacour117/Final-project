@@ -1,0 +1,247 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+
+/* barvy a fonty */
+:root {
+    --c-primary: #FFFACD;
+    --c-secondary: #EEE9E9;
+    --c-tertiary: #FFE4C4;
+    --f-primary: font?;
+}
+
+
+.wrapper {
+    max-width: 66rem;
+    margin: 0 auto;
+    background-color: #ffff;
+}
+
+body {
+    background-color: #ffff;
+}
+/* Menu - hlavička */
+
+.menu-photo {
+    width: 100%;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--c-primary);
+}
+
+.menu__logo {
+    width: 130px;
+    margin-left: 30px;
+}
+
+.menu__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__item {
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 20px;
+    color: rgb(127, 120, 120);
+    text-align: center;
+    position: relative;
+}
+
+.menu__item::after {
+    content: " ";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid;
+    color: var(--c-secondary);
+    transform-origin: bottom left;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu__item:hover::after {
+    color: #8B8970;
+    transform: scale(1, 1);
+}
+
+.menu-h1 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(127, 120, 120);
+    background-color: #FFF5EE;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 125px;
+    left: 290px;
+}
+
+/* Main - hlavní část první strany */
+
+.main {
+    display: flex;
+    margin: 0;
+    color: rgb(127, 120, 120);
+    background-color: var(--c-primary);
+    height: 250px;
+}
+
+.main-photo {
+    width: 250px;
+}
+
+.main__item:first-child {   
+    padding-left: 30px;
+    align-self: center;
+}
+
+.main__item:last-child {
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+/* Nabídka služeb */
+
+.offer-h1 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(127, 120, 120);
+    background-color: #FFF5EE;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 1085px;
+    left: 290px;
+}
+
+.offer {
+    display: flex;
+    flex: 0 0 calc((100% - 30px) / 3);
+    justify-content: space-around;
+    margin: 120px 0 120px 0;
+}
+
+.offer-item {
+    display: flex;
+    flex-direction: column;
+    color: rgb(127, 120, 120);
+}
+
+.offer-text {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Patička stránky */
+
+.footer {
+    background-color: var(--c-primary);
+}
+
+.footer-h1 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(127, 120, 120);
+    background-color: #FFF5EE;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    top: 1500px;
+    left: 290px;
+}
+
+.footer-kontakt {
+    list-style-type: none;
+    color: rgb(127, 120, 120);
+    display: flex;
+    flex-direction: column;
+    line-height: 37px;
+    margin-left: 30px;
+}
+
+.footer-kontakt-text{
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex: 0 0 calc((100% - 30px) / 4);
+    justify-content: space-around;
+    margin: 60px 0 0 0;
+
+}
+
+.footer__item {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.footer__text {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: rgb(127, 120, 120);
+}
+
+.footer__img {
+    width: 50px;
+}
+
+/* Photogalery - hlavní část strany Fotogalerie */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(5, 200px);
+    background-color: var(--c-tertiary);
+}
+
+.photo {
+    text-align: center;
+}
+
+.photo__text {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(127, 120, 120);
+}
+
+.photo__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+}
+
+.photo:first-child {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.photo:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.photo:nth-child(3) {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+.photo:nth-child(4) {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
