@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Upright:wght@400;500;600&family=Dancing+Script:wght@400;500;600&family=Kaushan+Script&family=Niconne&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <title>KamiCake</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Hlavička -->
+        <nav class="menu">
+                <img class="menu__logo" src="/images/icons/logo.png" alt="Logo">
+                
+                    <ul class="menu__list">
+                        <li><a class="menu__item" href="/">Úvod</a></li>
+                        <li><a class="menu__item" href="/photogalery/">Fotogalerie</a></li>
+                        <li><a class="menu__item" href="/order/">Objednávka</a></li>
+                        <li><a class="menu__item" href="/reference/">Reference</a></li>
+                    </ul>
+        </nav>
+
+        <section>
+            {{ content | safe }}
+        </section>
+
+        <!-- Patička -->
+        <footer class="footer">
+            <h1 class="footer-h1">Kontakt</h1>
+            <div class="footer-kontakt">
+                <span class="footer-kontakt-text">Kamila Golisová</span>
+                <span>Výstavní 205</span>
+                <span>Třinec</span>
+                <span>PSČ: 73961</span>
+            </div>
+            
+            
+            <section class="footer-container">
+                <div class="footer__item">
+                    <span class="footer__text"><a href="mailto:kamila.golisova@seznam.cz" class="footer__link">kamila.golisova@email.cz</a></span>
+                    <img class="footer__img" src="/images/icons/email.png" alt="Email">
+                </div>
+                <div class="footer__item">
+                    <span class="footer__text"><a href="tellto:666777888" class="footer__link">+420 777 105 089</a></span>
+                    <img class="footer__img" src="/images/icons/call.png" alt="Telefon">
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
