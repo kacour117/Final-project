@@ -111,6 +111,7 @@ body {
 .main__item:last-child {
     padding-left: 30px;
     line-height: 30px;
+    color: #191900;
 }
 
 /* Nabídka služeb */
@@ -123,7 +124,7 @@ body {
     margin: 0;
     padding: 10px;
     position: absolute;
-    top: 1095px;
+    top: 1133px;
     left: 290px;
 }
 
@@ -178,7 +179,7 @@ body {
 }
 
 .footer-kontakt-text{
-    margin-top: 50px;
+    margin: 0;
 }
 
 .footer-container {
@@ -186,7 +187,6 @@ body {
     flex: 0 0 calc((100% - 30px) / 4);
     justify-content: space-around;
     margin: 60px 0 0 0;
-
 }
 
 .footer__item {
@@ -213,6 +213,39 @@ body {
 
 /***************************************************
 /* Photogalery - hlavní část strany Fotogalerie */
+
+.nav-img {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.list-nav-img::after {
+    content: " ";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid;
+    color: var(--c-secondary);
+    transform-origin: bottom left;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.list-nav-img:hover::after {
+    color: #8B8970;
+    transform: scale(1, 1);
+}
+
+.list-nav-img {
+    text-decoration: none;
+    color: var(--c-font);
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
 
 .photo__img {
     border-radius: 10px;
@@ -378,7 +411,6 @@ font-size: 30px;
 
 .button:hover {
     box-shadow: 0px 4px 8px rgba(180, 157, 157, 0.4);
-
 }
 
 .footer-h1o {
@@ -407,4 +439,119 @@ font-size: 30px;
 
 .thanks__link{
     color: var(--c-font);
+}
+
+
+
+
+
+
+.footer-H1 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--c-font);
+    background-color: var(--c-headline);
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 290px;
+    top: 300px;
+}
+
+.footer-H1cakesFlowers, .footer-H1cakesFruit, .footer-H1cakesChild, .footer-H1dessert {
+    font-size: 30px;
+    text-align: center;
+    color: var(--c-font);
+    background-color: var(--c-headline);
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    left: 290px;
+}
+
+.footer-H1cakesFlowers {
+    top: 2576px;  
+}
+
+.footer-H1cakesFruit {
+    top: 3522px; 
+}
+
+.footer-H1cakesChild {
+    top: 8527px;
+}
+
+.footer-H1dessert {
+    top: 3523px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    font-family: var(--c-font);
+    margin: 50px;
+  }
+  
+.tablinks {
+    color: var(--c-font);
+    font-family: 'Cormorant Upright', serif;
+    font-size: 20px;
+}
+
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    display: flex;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: var(--c-headline);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: var(--c-headline);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  
+  /* Style the active tab content */
+  .tabcontent.active {
+    display: block;
+  }
+  
+  .tabcontent {
+    display: none;
+}
+
+.cakesFlowers, .cakesFruit, .cakesChild, .dessert {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.show {
+    display: block;
+}
+
+
+.tab {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    flex: 0 0 calc(100% / 4);
 }
