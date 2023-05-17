@@ -3,7 +3,7 @@ layout: header-footer.njk
 title: Objednávka
 ---
     <!-- Objednávkový formulář --> 
-    <h1 class="photo-h1">Objednávkový formulář</h1>
+    <h1 class="photo__h1">Objednávkový formulář</h1>
     <p class="form-description">Pro objednávku mě můžete kontaktovat telefonicky, nebo použít objednávkový formulář níže.</p>
     
         <form class="form" method="post" action="https://submit-form.com/oHQhcUtL">
@@ -12,29 +12,29 @@ title: Objednávka
             name="_redirect"
             value="https://your-website.com/thanks"/>
         
-            <div class="form-field">
+            <div class="form__field">
                 <label for="jmeno">Jméno a příjmení:</label>
-                <input class="form-field-inp1" type="text" name="jmeno" id="jmeno" size="20" required>
+                <input class="form__field-inp1" type="text" name="jmeno" id="jmeno" size="20" required>
             </div>
-            <div class="form-field">
+            <div class="form__field">
                 <label for="email">Váš e-mail:</label>
-                <input class="form-field-inp2" type="email" name="email" id="email" size="20" required>
+                <input class="form__field-inp2" type="email" name="email" id="email" size="20" required>
             </div>
-            <div class="form-field">
+            <div class="form__field">
                 <label for="tel">Vaše telefonní číslo:</label>
-                <input class="form-field-inp3" type="tel" name="tel" id="tel" size="20" required>
+                <input class="form__field-inp3" type="tel" name="tel" id="tel" size="20" required>
             </div>
-            <div class="form-field">
+            <div class="form__field">
                 <label for="predmet">Předmět objednávky:</label>
-                <textarea class="form-field-inp4" type="text" name="predmet" id="predmet" maxlength="200" required></textarea>
+                <textarea class="form__field-inp4" type="text" name="predmet" id="predmet" maxlength="200" required></textarea>
             </div>
-            <div class="form-field">
+            <div class="form__field">
                 <label for="pocet">Počet kusů:</label>
-                <input class="form-field-inp5" type="text" name="pocet" id="pocet" size="20" required>
+                <input class="form__field-inp5" type="text" name="pocet" id="pocet" size="20" required>
             </div>
-            <div class="form-field">
+            <div class="form__field">
                 <label for="datum">Datum vyzvednutí objednávky:</label>
-                <input class="form-field-inp6" type="date" name="datum" id="datum" size="50" required>
+                <input class="form__field-inp6" type="date" name="datum" id="datum" size="50" required>
             </div>
 
             <button class="button" type="submit" name="tlacitko" value="odeslat">Odeslat objednávku</button>
