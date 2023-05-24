@@ -642,3 +642,60 @@ font-size: 30px;
     }
 }
 
+@media screen and (max-width: 440px) {
+      .menu__h1 {
+        top: 60px;
+        left: 1px;
+      }  
+
+      .offer__h1 {
+        top: 982px;
+        left: 96px;
+      }
+
+    .menu__logo {
+        display: none;
+    }
+
+    .offer {
+        display: block;
+    }
+
+    .offer__item {
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .offer__h1 {
+        top: 849px;
+        left: 108px;
+    }
+
+    .menu__item {
+        margin-left: 10px;
+    }
+
+@media screen and (max-width: 414px) {
+    .offer__h1 {
+        top: 854px;
+        left: 94px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .offer__h1 {
+        top: 864px;
+        left: 107px;
+        height: 39px;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .offer__h1 {
+        top: 858px;
+        left: 96px;
+        height: 44px;
+        font-size: 23px;
+    }
+}
+}
